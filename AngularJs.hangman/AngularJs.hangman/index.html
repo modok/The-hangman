@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="hangman">
+<head>
+	<title>AngularJs Hangman</title>
+	<script src="/scripts/jquery-2.1.3.min.js"></script>
+	<script src="/scripts/angular.min.js"></script>
+	<script src="/appjs/v1.0/hangman.min.js"></script>
+	<link href="/Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="/Content/hangman/hangman.min.css" rel="stylesheet" />
+</head>
+	<body data-ng-controller="mainCtrl">
+		<hangman word="word" errors="errors"></hangman>
+		<div class="result">
+			{{message}}
+		</div>
+		<keyboard input-manager="inputManager(key)"></keyboard>
+	</body>
+</html>
